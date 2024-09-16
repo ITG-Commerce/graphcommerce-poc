@@ -1,0 +1,12 @@
+diff --git a/node_modules/@graphql-mesh/utils/esm/fileURLToPath.js b/node_modules/@graphql-mesh/utils/esm/fileURLToPath.js
+index dfe5844..3765514 100644
+--- a/node_modules/@graphql-mesh/utils/esm/fileURLToPath.js
++++ b/node_modules/@graphql-mesh/utils/esm/fileURLToPath.js
+@@ -39,6 +39,7 @@ function fileUriToPath(uri) {
+     return host + path;
+ }
+ export function fileURLToPath(url) {
++    url = url.href;
+     if (url?.startsWith('file://')) {
+         return fileUriToPath(url);
+     }
