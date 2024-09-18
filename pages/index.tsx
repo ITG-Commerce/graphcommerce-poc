@@ -84,7 +84,7 @@ export const getStaticProps: GetPageStaticProps = async ({ locale }) => {
   // todo(paales): Remove when https://github.com/Urigo/graphql-mesh/issues/1257 is resolved
   const favoritesList = staticClient.query({
     query: ProductListDocument,
-    variables: { pageSize: 8, filters: { category_uid: { eq: 'MTIx' } } },
+    variables: { pageSize: 8, filters: { category_id: { eq: '2' } } },
   })
 
   const latestList = staticClient.query({
