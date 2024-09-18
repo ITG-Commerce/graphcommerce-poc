@@ -6,13 +6,10 @@
  * @type {import('@graphcommerce/next-config/src/generated/config').GraphCommerceConfig}
  */
 const config = {
-  hygraphEndpoint: 'https://eu-central-1.cdn.hygraph.com/content/ckhx7xadya6xs01yxdujt8i80/master',
-  magentoEndpoint: 'https://main.magento2-d55b3.reward-cloud.io/graphql',
-  canonicalBaseUrl: 'https://graphcommerce.vercel.app',
-  storefront: [
-    { locale: 'en', magentoStoreCode: 'en_US', defaultLocale: true },
-    { locale: 'nl', magentoStoreCode: 'nl_NL' },
-  ],
+  hygraphEndpoint: 'https://us-west-2.cdn.hygraph.com/content/cm168x10x02f807waghh0uqfg/master',
+  magentoEndpoint: 'https://staging.magento2-d55b3.reward-cloud.io/graphql',
+  canonicalBaseUrl: 'https://localhost:3000',
+  storefront: [{ locale: 'en', magentoStoreCode: 'default', defaultLocale: true }],
   recentlyViewedProducts: {
     enabled: true,
   },
