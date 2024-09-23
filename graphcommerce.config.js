@@ -8,7 +8,7 @@
 const config = {
   hygraphEndpoint: 'https://us-west-2.cdn.hygraph.com/content/cm168x10x02f807waghh0uqfg/master',
   magentoEndpoint: 'https://staging.magento2-d55b3.reward-cloud.io/graphql',
-  canonicalBaseUrl: 'https://localhost:3000',
+  canonicalBaseUrl: 'https://graphcommerce-poc-delta.vercel.app',
   storefront: [{ locale: 'en', magentoStoreCode: 'default', defaultLocale: true }],
   recentlyViewedProducts: {
     enabled: true,
