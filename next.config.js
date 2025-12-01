@@ -23,6 +23,7 @@ const nextConfig = {
   optimizeFonts: false,
   images: {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    domains: ['https://staging.magento2-d55b3.reward-cloud.io'],
   },
   eslint: {
     ignoreDuringBuilds: true,
